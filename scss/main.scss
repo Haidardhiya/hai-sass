@@ -1,0 +1,55 @@
+// .main {
+//   background-color: lightblue;
+
+//   .main-heading {
+//     font-size: 2em;
+//   }
+
+//   .main-paragraph {
+//     font-size: 1.5em;
+//   }
+// }
+
+// .main,
+// footer {
+//   h1,
+//   p {
+//     letter-spacing: 1px;
+//   }
+// }
+// berguna untuk mempermudah penulisan css agar lebih mudah
+
+// penggunaan tanda & untuk selector diatasnya disini contohnya adalah main
+//  parent selector
+// .main {
+//   .container & {
+//     background-color: lightblue;
+//   }
+//   .main-heading {
+//     font-size: 2em;
+//   }
+//   // &: berguna untuk mengcustom sudo class seperti hover, visited dll
+//   &:hover {
+//     background-color: salmon;
+//   }
+// }
+
+// &- berguna untuk memudahkan penulisan nesting
+// .main {
+//   &-heading {
+//     font-size: 2em;
+//   }
+//   &-paragraph {
+//     font-size: 1.4em;
+//   }
+// }
+
+// .footer {
+//   & &-heading {
+//     font-size: 2em;
+//   }
+
+//   & &-paragraph {
+//     font-size: 1.4em;
+//   }
+// }
