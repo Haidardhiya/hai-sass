@@ -1,0 +1,39 @@
+// :root {
+//   --primary-color: #f4f1de;
+//   --secondary-color: #f2cc8f;
+//   --text-color: #e07a5f;
+// }
+
+// body {
+//   background-color: var(--primary-color);
+// }
+
+// h1 {
+//   color: var(--text-color);
+// }
+// yang di atas ini metode variable milik css
+
+// $primary-color: #f4f1de;
+// $secondary-color: #f2cc8f;
+// $text-color: #e07a5f;
+
+// body {
+//   background-color: $primary-color;
+// }
+
+// h1 {
+//   color: $text-color;
+// }
+// ini metode variable milik sass hanya menggunakan $
+
+// map
+// $alert: (
+//   "danger": red,
+//   "succes": green,
+//   "warning": orange,
+// );
+
+// h1 {
+//   color: map-get($alert, "succes");
+// }
+// jika ingin memanggil map tingal map-get
