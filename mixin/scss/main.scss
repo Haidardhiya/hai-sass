@@ -1,0 +1,77 @@
+// .header ul,
+// .footer ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// .header ul li,
+// .footer ul li {
+//   display: inline-block;
+// }
+
+// mixin
+// simple mixin
+@mixin inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+// @mixin digunakan untuk menyusun sebuah function
+
+.header ul {
+  @include inline-list();
+  li {
+    background-color: black;
+    padding: 1em;
+
+    a {
+      color: white;
+    }
+  }
+}
+// @include digunakan untuk memanggil function
+
+.footer ul {
+  @include inline-list();
+  li {
+    padding: 0.4em;
+    background-color: salmon;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+// arguments pada mixin
+@mixin flex-box($direction: row, $space: center) {
+  // nilai default argument : row
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+// flex box rules : display flex agar content didalam bisa di setting; justify contect center secara forizontal; alignt items center secara vertical; row-reverse ngebalik baris
+
+// memasukkan argument row-reverse ke mixin flex-box untuk mengekseskusi flex direction pada built in mixin awal
+
+// bisa menambahkan lebih dari satu parameter/argument
+.container {
+  @include flex-box(row-reverse, space-between);
+  width: 600px;
+  height: 400px;
+  background-color: rgb(189, 188, 188);
+  .box {
+    width: 60px;
+    height: 60px;
+    background-color: greenyellow;
+    text-align: center;
+    line-height: 60px;
+  }
+}
