@@ -1,0 +1,20 @@
+//  file modular memiliki ciri underscore didepan nama file nya
+// bersifat parsial
+
+@mixin inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+@mixin flex-box($direction: row, $space: center) {
+  // nilai default argument : row
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
