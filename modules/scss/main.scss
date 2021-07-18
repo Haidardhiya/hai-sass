@@ -1,7 +1,15 @@
 // memasukkan library/modules dengan fitur @import
 // urutan penempatan inport nya sesuai dengan posisi html
 //
-@import "modules/mixin";
-@import "modules/header";
-@import "modules/footer";
-@import "modules/container";
+// @import "modules/mixin";
+// @import "modules/header";
+// @import "modules/footer";
+// @import "modules/container";
+
+// atau bisa ditulis seperti ini
+// @import "modules/mixin", "modules/header", "modules/footer", "modules/container";
+
+@use "modules/mixin";
+@use "modules/header";
+@use "modules/footer";
+@use "modules/container";
